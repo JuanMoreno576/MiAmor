@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="main-title">Hola mi amor, lo hice para ti con mucho amor, espero te guste ❤️</h1>
+    <div id="initial-buttons">
+        <button onclick="showLoveMessage()">Te amo mi amor</button>
+        <button onclick="showExitMessage()">No quiero nada</button>
+    </div>
+    
+    <div id="love-message" class="hidden">
+        <h1>Te amo mucho bebé</h1>
+        <p class="love-message">
+            Hola amor. <br>Si soy yo el más guapo de todos, como no, estoy aquí para recordarte amor que hoy es 14/8...<br>
+            <span class="heart">❤️</span>
+        </p>
+        <button onclick="showNextPart()">Siguiente</button>
+    </div>
+    
+    <div id="exit-message" class="hidden">
+        <h1>Está bien, amor. 😔</h1>
+        <p>Si algún día cambias de opinión, aquí estaré para ti...</p>
+    </div>
+    
+    <div id="next-part" class="hidden">
+        <h2>¿Ahora elige?</h2>
+        <button onclick="startLoveLoop()">Éligela si me amas</button>
+        <button onclick="showNoLoveMessage()">Éligeme si no me amas</button>
+    </div>
+    
+    <div id="love-loop" class="hidden">
+        <h2 id="love-question">¿Me amas?</h2>
+        <button id="yes-button" onclick="endLoveLoop()">Sí</button>
+        <button id="no-button" onmouseover="moveNoButton()">No</button>
+    </div>
+    
+    <div id="final-love-message" class="hidden">
+        <h2 id="love-level">Me amas mucho</h2>
+    </div>
+    
+    <div id="no-love-message" class="hidden">
+        <h2>Me rompiste el corazón 💔</h2>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
